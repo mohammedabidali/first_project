@@ -8,6 +8,7 @@ for index in range(0, 5):
 
     calculator_object = calculator.CalculatorClass(number1, number2)
     sum = calculator_object.add()
+    print(f"calculator_object = {calculator_object}")
     print("Sum = ", sum)
     print(f"Total operations = {calculator.CalculatorClass.op_count}")
 
