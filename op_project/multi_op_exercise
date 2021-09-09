@@ -1,0 +1,26 @@
+a = input("please enter first number ")
+a = int(a)
+b = input("please enter second number ")
+if b == 0:
+  print("You entered a 0 and you cant do a division by this number")
+  print("Please enter a number other than a 0")
+  b = input("please enter second number ")
+b = int(b)
+
+SUM = a + b
+SUB = a - b
+MUL = a * b
+DIV = a / b
+
+f = open("results.txt", "w+")
+
+
+print("a + b = " + str(SUM))
+print("a - b = " + str(SUB))
+print("a * b = " + str(MUL))
+print("a / b = " + str(DIV))
+
+f.write("a + b = " + str(SUM) + "\n")
+f.write("a - b = " + str(SUB) + "\n")
+f.write("a * b = " + str(MUL) + "\n")
+f.write("a / b = " + str(DIV) + "\n")
